@@ -6,27 +6,32 @@
 </head>
 <body>
   <div>
-    <input id="inputNumber1" type="text">
+    <input id="inputNumber1" type="number">
   </div>
   <div>
-    <input id="inputNUmber2" type="text">
+    <input id="inputNumber2" type="number">
   </div>
   
   <div>
-    <button>+</button>
+    <button onclick="handlers.addition()">+</button>
   </div>
 
   <div>
-    <button>-</button>
+    <button onclick="handlers.subtraction()">-</button>
   </div>
 
   <div>
-    <button>*</button>
+    <button onclick="handlers.multiplication()">*</button>
   </div>
 
   <div>
-    <button>/</button>
+    <button onclick="handlers.division()">/</button>
   </div>  
+
+  <div>
+    <input id="outputResult" type="text">
+  </div>
   
+  <script src="script.js"></script>
 </body>
 </html>
