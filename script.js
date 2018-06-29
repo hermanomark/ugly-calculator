@@ -53,7 +53,7 @@ const handlers = {
     calculator.subtraction(num1.valueAsNumber, num2.valueAsNumber);
     num1.valueAsNumber = '';
     num2.valueAsNumber = '';
-     view.displayResult();
+    view.displayResult();
   },
   multiplication() {
     num1 = document.getElementById('inputNumber1');
@@ -61,7 +61,7 @@ const handlers = {
     calculator.multiplication(num1.valueAsNumber, num2.valueAsNumber);
     num1.valueAsNumber = '';
     num2.valueAsNumber = '';
-     view.displayResult();
+    view.displayResult();
   },
   division() {
     num1 = document.getElementById('inputNumber1');
@@ -69,7 +69,7 @@ const handlers = {
     calculator.division(num1.valueAsNumber, num2.valueAsNumber);
     num1.valueAsNumber = '';
     num2.valueAsNumber = '';
-     view.displayResult();
+    view.displayResult();
   }
 };
 
