@@ -2,34 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ugly Calculator</title>
+  <title>Calculator</title>
 </head>
 <body>
+  <h1>Calculator</h1>
+
   <div>
-    <input id="inputNumber1" type="number">
+    <span>First number:</span><input id="inputNumber1" type="number">
   </div>
   <div>
-    <input id="inputNumber2" type="number">
+    <span>Second number:</span><input id="inputNumber2" type="number">
   </div>
   
   <div>
-    <button onclick="handlers.addition()">+</button>
+    <button onclick="handlers.addition()"> + </button>
   </div>
 
   <div>
-    <button onclick="handlers.subtraction()">-</button>
+    <button onclick="handlers.subtraction()"> - </button>
   </div>
 
   <div>
-    <button onclick="handlers.multiplication()">*</button>
+    <button onclick="handlers.multiplication()"> * </button>
   </div>
 
   <div>
-    <button onclick="handlers.division()">/</button>
+    <button onclick="handlers.division()"> / </button>
   </div>  
 
   <div>
-    <input id="outputResult" type="text">
+    <span>Result:</span><input id="outputResult" type="text">
   </div>
   
   <script src="script.js"></script>

@@ -1,7 +1,7 @@
 const calculator = {
   result: 0,
   displayResult() {
-    console.log(this.result)
+    console.log(this.result);
   },
   addition(a, b) {
     if (isNaN((a) || (b))) {
@@ -36,7 +36,7 @@ const calculator = {
       this.displayResult();
     }
   }
-}
+};
 
 const handlers = {
   addition() {
@@ -45,6 +45,7 @@ const handlers = {
     calculator.addition(num1.valueAsNumber, num2.valueAsNumber);
     num1.valueAsNumber = '';
     num2.valueAsNumber = '';
+    view.displayResult();
   },
   subtraction() {
     num1 = document.getElementById('inputNumber1');
@@ -52,6 +53,7 @@ const handlers = {
     calculator.subtraction(num1.valueAsNumber, num2.valueAsNumber);
     num1.valueAsNumber = '';
     num2.valueAsNumber = '';
+     view.displayResult();
   },
   multiplication() {
     num1 = document.getElementById('inputNumber1');
@@ -59,6 +61,7 @@ const handlers = {
     calculator.multiplication(num1.valueAsNumber, num2.valueAsNumber);
     num1.valueAsNumber = '';
     num2.valueAsNumber = '';
+     view.displayResult();
   },
   division() {
     num1 = document.getElementById('inputNumber1');
@@ -66,5 +69,12 @@ const handlers = {
     calculator.division(num1.valueAsNumber, num2.valueAsNumber);
     num1.valueAsNumber = '';
     num2.valueAsNumber = '';
+     view.displayResult();
+  }
+};
+
+const view = {
+  displayResult() {
+    document.getElementById('outputResult').value = calculator.result;
   }
 }
