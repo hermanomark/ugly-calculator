@@ -1,7 +1,5 @@
 ## Ugly calculator
 
-I'll challenge myself to build a calculator based on my current knowledged of javascript.
+I decided to challenge myself by building a calculator using my current knowledge of JavaScript.
 
-At first I displayed the output in console make sure it's working and then I made the handlers for user's input.
-
-After that I displayed the output at the web page.
+First, I displayed the output in the console to ensure everything was working correctly. After that, I created handlers for user input, and finally, I displayed the output on the webpage.
